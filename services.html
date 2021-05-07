@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedansh</title>
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="vedansh-styling.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</head>
+<body>
+    
+
+    <div class="vd-navbar" id="navbar">
+        <img src="./assets/logo.svg" id="navbar-logo">
+        <div id="navbar-links">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="clients.html">Clients</a></p>
+            <p><a href="contact.html">Contact Us</a></p>
+            <p><a href="about.html">About</a></p>
+        </div>
+    </div>
+    
+    <div class="s-main">
+      <div class="smain1">
+        <h1 class="smain-txt p">Our Services</h1>
+        <p class="ssub p">Today, we at Vedansh aim to be a one-stop shop for all our customers’ electrical engineering and contracting needs, by offering EPC, Project Management, Testing and Commissioning, Plant erection and Operation and Management services. Once you hand over a project to us, you can sit back and watch your vision come to life.</p>
+        <button class="view-all w">View All</button>
+    </div>
+    <div class="smain2">
+        <img src="./assets/services.svg" class="smain-illus" alt="Enginners on Site">
+        <img src="./assets/round-shadow.svg" alt="" class="smain2-shadow">
+    </div>
+    </div>
+
+    <div class="s-container">
+      <div class="s-card"></div>
+      <div class="s-card"></div>
+      <div class="s-card"></div>
+      <div class="s-card"></div>
+      <div class="s-card"></div>
+    </div>
+
+    <div class="vd-footer">
+      <div class="foot-cnt">
+          <h1 class="text-left foot-txt w">Reach <span class="w-bar">Us</span></h1>
+      </div>
+      <div class="foot-container">
+      <div class="foot-info">
+          <div class="info-icon" style="background-image: url('./assets/icons/pin.svg');"></div><div class="info-txt">Vedansh Infra Services Pvt. Ltd. F-16, Block II, Ambe Market,Near Rituraj Vatika, Chittorgarh, Rajasthan - 312001</div>
+          <div class="info-icon" style="background-image: url('./assets/icons/telephone.svg');"></div><div class="info-txt">Phone No. 01472-241007</div>
+          <div class="info-icon" style="background-image: url('./assets/icons/mail.svg');"></div><div class="info-txt"><a href="mailto:vedansh.infragroup@gmail.com">vedansh.infragroup@gmail.com</a></div>
+      </div>
+      <div class="foot-links">
+          <a href="">
+          <img alt="View VEDANSH INFRA SERVICES PRIVATE LIMITED Profile" class="foot-link" src="./assets/profile.png">
+          </a>
+      </div>
+      <div class="foot-links">
+              <a href="http://discovery.ariba.com/profile/AN01399503535">
+              <img alt="View VEDANSH INFRA SERVICES PRIVATE LIMITED profile on Ariba Discovery" class="foot-link" src="https://service.ariba.com/an/p/Ariba/badge_245x100.jpg">
+              </a>
+      </div>
+      </div>
+  </div>
+
+
+<script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-10em";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+</script>
+
+<script>
+        $(function () {
+  $(document).scroll(function () {
+	  var $nav = $(".vd-navbar");
+	  $nav.toggleClass('scrolled', $(this).scrollTop() > screen.height-40);
+	});
+});
+</script>
+</body>
+</html>
